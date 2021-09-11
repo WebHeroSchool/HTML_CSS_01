@@ -4,33 +4,39 @@
 <head>
      <meta charset="utf-8">
      <title>Мой первый сайт</title>
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&display=swap">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
-    <header>
-        <div class="logo_txt">app.creation</div>
-        <nav>
-            <a class="menu_txt" href="#">start</a>
-            <a class="menu_txt" href="#">services</a>
-            <a class="menu_txt" href="#">about</a>
-            <a class="menu_txt" href="#">blog</a>
-            <a class="menu_txt" href="#">contact us</a>
+    <div class="wrapper">
+    <header class="header">
+        <div class="logo">
+        <img class="logo__image" src="img/logo_g1.png" alt="Logo">
+    app.creation</div>
+        <nav class="menu">
+            <a class="menu__item" href="#">start</a>
+            <a class="menu__item_active" href="#">services</a>
+            <a class="menu__item" href="#">about</a>
+            <a class="menu__item" href="#">blog</a>
+            <a class="menu__item" href="#">contact us</a>
         </nav>
     </header>
-    <section>
-        <main>
-            <h1 class="title_txt">
+    <section class=section>
+        <main class="main-content">
+            <h1 class="main-content__title">
             Building an App Without Design Expertise?</h1>
-            <p class="basic_txt">I help tech startups design better digital products without hiring a full-time designer</p>
-            <button class="btn_txt">Schedule free consultation</button>
+            <p class="main-content__description">I help tech startups design better digital products without hiring a full-time designer</p>
+            <button class="main-content__button">Schedule free consultation</button>
         </main>
-        <div>
-            <img src="img/Frame.png" alt="Image:The team at work">
+        <div class="image-content">
+            <img class="image-content__image" src="img/Frame.png" alt="Image:The team at work">
         </div>
     </section>
+    </div>
 </body>
 
 </html>
