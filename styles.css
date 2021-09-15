@@ -127,11 +127,9 @@
 
 
 .main__description{
-	/*width: 455px;*/
   	padding-right: 20%;
 	margin: 0 0 59px 0;
 	font: 400 22px/26px roboto, Arial, Helvetica, sans-serif;
-  	letter-spacing: .35px;
 }
 
 .main__button{
