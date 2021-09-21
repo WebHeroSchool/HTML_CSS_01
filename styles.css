@@ -223,6 +223,21 @@
 	font: 400 22px/26px roboto, Arial, Helvetica, sans-serif;
 }
 
+@keyframes zoomer{
+
+	50%{
+		color: black;
+		background: linear-gradient(45deg, #ECF3FF, #0056EC);
+		padding-top: +5%;
+		padding-bottom: +5%;
+	}
+
+	to{
+		color: #FFF;
+		background-color: #0056EC;
+	}
+}
+
 .main__button{
 	padding: 17px 34px 16px 21px;
   	margin-left: 1px;
@@ -232,11 +247,13 @@
 	color: #FFF;
 	background-color: #0056EC;
 	text-decoration: none;
-	transition: opacity .5s;
+	transition: opacity .5s animation 1s;
+	animation: zoomer 2s infinite ease-in-out;
 }
 
 .main__button:hover{
 	opacity: .5;
+	animation: 0;
 }
 
 @media(max-width: 1918px){
